@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+  <link rel="preconnect" href="https://app.snipcart.com" />
+  <link rel="preconnect" href="https://cdn.snipcart.com" />
+
+  <!-- Custom Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+    .bag{
+        width: 400px;
+    height: 400px;
+    z-index: 1;
+    
+    object-fit: contain;
+    display: inline-block;
+    width: 90%;
+        z-index: 1;
+    
+    }
+
+.buy-button {
+    display: flex;
+    position: relative;
+    
+    align-content: center;
+    align-items: center;
+
+}
+
+.price {
+    display: flex;
+    font-size: 20px;
+    color: #000;
+}
+
+.snipcart-checkout {
+    display: flex;
+    font-size: 18px;
+    color: #000;
+    line-height: 34px;
+    border: none;
+    
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    padding-right: 20px;
+    margin-left: auto;
+  
+}
+
+.snipcart-add-item {
+    display: flex;
+    color: rgb(255, 255, 255);
+    color: var(--color-buttonPrimary,#fff);
+    border-color: transparent;
+    border-color: var(--borderColor-buttonPrimary,transparent);
+    background-color: #1a4db3;
+    background-color: var(--bgColor-buttonPrimary,#000000);
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-out;
+    transition-property: color,border-color,background-color,box-shadow;
+    margin-left: 15px;
+}
+
+.radio{
+    display: flex;
+    padding-right: 50px;
+
+}
+
+svg {
+    padding: 25px;
+   
+}
+  </style>
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+
+
+  <!-- Page Title -->
+  <title>SWAG DUKEN</title>
+  <button class="snipcart-checkout"><svg width="31" height="100%" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.10512 0.368718C0.560256 0.368718 0.118164 0.812066 0.118164 1.35848C0.118164 1.9049 0.560256 2.34824 1.10512 2.34824H4.90887L8.30138 18.4009C8.43503 19.0053 8.83085 19.5079 9.32946 19.5041H25.7788C26.3005 19.5118 26.7799 19.0375 26.7799 18.5143C26.7799 17.9911 26.3006 17.5168 25.7788 17.5245H10.1315L9.71003 15.545H27.095C27.5371 15.5412 27.9547 15.2048 28.0511 14.7718L30.354 4.87412C30.4825 4.29933 29.9852 3.67172 29.3979 3.66786H7.21171L6.6771 1.15221C6.58329 0.71276 6.15921 0.368652 5.7107 0.368652L1.10512 0.368718ZM7.623 5.64746H12.7634L13.2569 8.61674H8.25005L7.623 5.64746ZM14.7785 5.64746H20.9881L20.4946 8.61674H15.2719L14.7785 5.64746ZM23.0031 5.64746H28.1537L27.4649 8.61674H22.5097L23.0031 5.64746ZM8.67181 10.5963H13.5862L14.0797 13.5656H9.29919L8.67181 10.5963ZM15.6009 10.5963H20.1656L19.6721 13.5656H16.0944L15.6009 10.5963ZM22.1807 10.5963H27.0023L26.3135 13.5656H21.6872L22.1807 10.5963ZM12.6197 20.164C10.8141 20.164 9.32979 21.6525 9.32979 23.4632C9.32979 25.2739 10.8141 26.7624 12.6197 26.7624C14.4252 26.7624 15.9095 25.2739 15.9095 23.4632C15.9095 21.6525 14.4252 20.164 12.6197 20.164ZM22.4892 20.164C20.6837 20.164 19.1994 21.6525 19.1994 23.4632C19.1994 25.2739 20.6837 26.7624 22.4892 26.7624C24.2948 26.7624 25.7791 25.2739 25.7791 23.4632C25.7791 21.6525 24.2948 20.164 22.4892 20.164ZM12.6197 22.1435C13.3586 22.1435 13.9356 22.7222 13.9356 23.4632C13.9356 24.2042 13.3586 24.7829 12.6197 24.7829C11.8807 24.7829 11.3037 24.2042 11.3037 23.4632C11.3037 22.7222 11.8807 22.1435 12.6197 22.1435ZM22.4892 22.1435C23.2282 22.1435 23.8052 22.7222 23.8052 23.4632C23.8052 24.2042 23.2282 24.7829 22.4892 24.7829C21.7503 24.7829 21.1733 24.2042 21.1733 23.4632C21.1733 22.7222 21.7503 22.1435 22.4892 22.1435Z" fill="#429bfc"></path></svg>
+    <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
+</button>
+
+</head>
+<body>
+   
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white flex-column border-0  ">
+        <div class="container-fluid">
+            <div class="w-100">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+    
+                    <!-- Logo-->
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.html">
+                        <div class="d-flex align-items-center">
+                            <H1>SWAG DUKEN</H1>
+                        </div>
+                    </a>
+
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./radio.html">
+                        <div class="radio">
+                            <h4>RADIO</h4>
+                        </div>
+                    </a>
+                    <!-- / Logo-->
+    
+            
+                  
+    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- / Navbar-->    <!-- / Navbar-->
+    
+
+
+  
+ 
+
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+<script nomodule
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
+
+
+    <section class="mt-0 ">
+       
+        
+        <div class="container-fluid" data-aos="fade-in">
+
+            <!-- Products-->
+            <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                        <!-- Card Product-->
+                <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                            <div class="card-img position-relative">
+                                
+                                <model-viewer class="bag" camera-controls loading="eager" auto-rotate src="./assets/BAG.glb" width: 500px;
+                                height: 500px;>
+                               </model-viewer>
+                              
+                                    
+                            </div>
+
+                <div class="card-body">
+                                <a class="text-decoration-none" href="./product.html">
+                                    <h4>WOW ITEM 1</h4>
+                                </a>
+                                <p>Made by Daddy w Love</p>
+
+                    <div class="buy-button">
+                    <span class="price">$350</span>
+                    <button class="snipcart-add-item"
+                      data-item-id="w1"
+                      data-item-price="350"
+                      data-item-description="Made by Daddy w Love"
+                      data-item-image="./d1.jpg"
+                      data-item-name="WOW ITEM 1"
+                      data-item-custom1-name="wow1"
+                      data-item-custom1-options="wow1">
+                    Add to cart
+                    </button>
+                    </div>
+                                
+                          
+                          
+                </div>
+
+                </div>
+            </div>
+                    
+
+         <div class="col-12 col-sm-6 col-lg-4">
+                        <!-- Card Product-->
+        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                            <div class="card-img position-relative">
+                                
+                                
+                                <model-viewer class="bag" camera-controls loading="eager" auto-rotate src="./assets/BAG.glb" width: 500px;
+                                height: 500px;>
+                               </model-viewer>
+                                
+                                    
+                            </div>
+                            <div class="card-body">
+                                <a class="text-decoration-none" href="./product2.html">
+                                    <h4>WOW ITEM 2</h4>
+                                    <p>Made by Daddy w Love</p>
+                                </a>
+                                <div class="buy-button">
+                                    <span class="price">$550</span>
+                                    <button class="snipcart-add-item"
+                                      data-item-id="w2"
+                                      data-item-price="550"
+                                      data-item-description="Made by Daddy w Love"
+                                      data-item-image="./d2.jpg"
+                                      data-item-name="WOW ITEM 2"
+                                      data-item-custom1-name="wow2"
+                                      data-item-custom1-options="wow2">
+                                    Add to cart
+                                    </button>
+                                    </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <!-- Card Product-->
+                        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                            <div class="card-img position-relative">
+                                <model-viewer class="bag" camera-controls loading="eager" auto-rotate src="./assets/BAG.glb" width: 500px;
+                                height: 500px;>
+                               </model-viewer>
+                                    
+                                
+                                    
+                            </div>
+                            <div class="card-body">
+                                <a class="text-decoration-none" href="./product3.html">
+                                    <h4>WOW ITEM 3</h4>
+                                    <p>Made by Daddy w Love</p>
+                                </a>
+                                <div class="buy-button">
+                                    <span class="price">$1550</span>
+                                    <button class="snipcart-add-item"
+                                      data-item-id="w3"
+                                      data-item-price="1550"
+                                      data-item-description="Made by Daddy w Love"
+                                      data-item-image="./d3.jpg"
+                                      data-item-name="WOW ITEM 3"
+                                      data-item-custom1-name="wow3"
+                                      data-item-custom1-options="wow3">
+                                    Add to cart
+                                    </button>
+                                    </div>
+
+                          
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / Products-->
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="border-top py-5 mt-4  ">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="#"><i class="ri-instagram-fill"></i></a></li>
+                  
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center justify-content-end flex-column flex-lg-row">
+                    <p class="small m-0 text-center text-lg-start">&copy; Damir SWAG LORD INC   All Rights Reserved</p>
+                    <ul class="list-unstyled mb-0 ms-lg-4 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center me-2">
+                            <i class="pi pi-sm pi-paypal"></i></li>
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center me-2">
+                            <i class="pi pi-sm pi-mastercard"></i></li>
+                        
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center"><i
+                                class="pi pi-sm pi-visa"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>    <!-- / Footer-->
+    
+    <!-- Offcanvas Imports-->
+    <!-- Filters Offcanvas-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilters" aria-labelledby="offcanvasFiltersLabel">
+      <div class="offcanvas-header pb-0 d-flex align-items-center">
+        <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Category Filters</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex flex-column justify-content-between w-100 h-100">
+    
+    
+
+        </div>
+      </div>
+    </div>
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+    <div id="snipcart" data-config-modal-style="side" data-api-key="MzkzMTFkMDMtYWEwYi00YjZhLWEwM2MtNDg2OTQwNzQwZmU0NjM4MDgzNzI1NzQwMjk2Nzcw" hidden></div>
+</body>
+
+</html>
